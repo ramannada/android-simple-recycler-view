@@ -1,10 +1,12 @@
 package com.blogspot.ramannada.simplerecyclerview;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.List;
@@ -41,12 +43,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder>
         private TextView title, duration, synopsis, director, releaseDate, boxOffice;
         private ImageView poster;
 
-        public MovieHolder(View itemView) {
+        public MovieHolder(final View itemView) {
             super(itemView);
 
             title = itemView.findViewById(R.id.tv_title);
             duration = itemView.findViewById(R.id.tv_duration);
             poster = itemView.findViewById(R.id.iv_poster);
+
+
         }
 
         void bind(Movie movie) {

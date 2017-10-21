@@ -17,7 +17,8 @@
         android:layout_height="160dp"
         android:src="@drawable/pocdtnt"
         android:scaleType="fitCenter"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:contentDescription="poster of film" />
 
     <TextView
         android:id="@+id/tv_title"
